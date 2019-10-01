@@ -5,8 +5,9 @@ def load_library(file)
   new_hash = {"get_meaning": {}, "get_emoticon": {}}
   
   emoticons.each do |meaning, emoitcon|
-  new_hash[:get_emoticon][emoticon] = emoticon.last
-  new_hash[]
+  new_hash[:get_emoticon][emoticon[0]] = emoticon[1]
+  new_hash[:get_meaning][emoticon[1]] = meaning
+  
   emoticon_hash['get_emoticon'][emoticon_set.first] = emoticon_set.last 
   emoticon_hash['get_meaning'][emoticon_set.last] = word
 
