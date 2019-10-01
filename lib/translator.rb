@@ -15,8 +15,8 @@ end
 
 def get_english_meaning(file, emo)
   call = load_library(file)
-  if call[:get][emo]
-    call[:get_emoticon][emo]
+  if call[:get_meaning][emo]
+    call[:get_meaning][emo]
   else
     return "Sorry, that emoticon was not found."
 end
