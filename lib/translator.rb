@@ -9,11 +9,14 @@ def load_library(file)
   new_hash
 end
 
-def get_japanese_emoticon(file, jemo)
+def get_japanese_emoticon(file, emo)
   call = load_library(file)
 end
 
-def get_english_meaning(file, eemo)
+def get_english_meaning(file, emo)
   call = load_library(file)
-  if call[:get_emoticon]
+  if call[:get_emoticon][emo]
+    call[:get_emoticon][emo]
+  else
+    return ""
 end
