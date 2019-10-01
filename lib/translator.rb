@@ -4,12 +4,9 @@ def load_library(file)
   table = YAML.load_file(file)
   new_hash = {"get_meaning": {}, "get_emoticon": {}}
   table.each do |meaning, emoticons|
-  new_hash[:get meaning]
-      hash.each{|key, emoticon_array|
-    new_hash[:get_meaning]["#{emoticon_array[1]}"] = key
-    new_hash[:get_emoticon]["#{emoticon_array[0]}"] = "#{emoticon_array[1]}"
-    
-end
+  new_hash[:get_meaning][emoticons[1]] = meaning
+  new_hash[:get_emoticon][emoticons[0]] = emoticons[1]
+  end
   new_hash
 end
 
