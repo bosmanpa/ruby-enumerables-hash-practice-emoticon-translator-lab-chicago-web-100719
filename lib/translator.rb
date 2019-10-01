@@ -1,9 +1,9 @@
 require "yaml"
 
 def load_library(file)
-  emoticons = YAML.load_file(file)
+  table = YAML.load_file(file)
   new_hash = {"get_meaning": {}, "get_emoticon": {}}
-  
+  table.each do |
   
     
     
