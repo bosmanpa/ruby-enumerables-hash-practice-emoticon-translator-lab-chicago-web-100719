@@ -5,7 +5,9 @@ def load_library(file)
   new_hash = {"get_meaning": {}, "get_emoticon": {}}
   table.each do |
   
-    
+      hash.each{|key, emoticon_array|
+    new_hash[:get_meaning]["#{emoticon_array[1]}"] = key
+    new_hash[:get_emoticon]["#{emoticon_array[0]}"] = "#{emoticon_array[1]}"
     
 end
   new_hash
