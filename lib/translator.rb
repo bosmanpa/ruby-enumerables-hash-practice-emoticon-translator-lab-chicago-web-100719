@@ -11,7 +11,10 @@ end
 
 def get_japanese_emoticon(file, emo)
   call = load_library(file)
-  if call[:get]
+  if call[:get_emoticon][emo]
+    call[:get_emoticon][emo]
+  else 
+    return
 end
 
 def get_english_meaning(file, emo)
