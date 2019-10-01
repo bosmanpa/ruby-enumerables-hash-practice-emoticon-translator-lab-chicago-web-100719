@@ -15,5 +15,5 @@ end
 
 def get_english_meaning(file, eemo)
   call = load_library(file)
-  
+  if call[:get]
 end
