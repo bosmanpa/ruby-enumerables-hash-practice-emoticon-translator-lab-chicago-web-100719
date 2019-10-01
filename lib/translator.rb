@@ -15,6 +15,7 @@ def get_japanese_emoticon(file, emo)
     call[:get_emoticon][emo]
   else 
     return "Sorry, that emoticon was not found"
+  end
 end
 
 def get_english_meaning(file, emo)
@@ -23,4 +24,5 @@ def get_english_meaning(file, emo)
     call[:get_meaning][emo]
   else
     return "Sorry, that emoticon was not found"
+  end
 end
